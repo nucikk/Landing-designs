@@ -1,48 +1,73 @@
 .discover {
-  max-width: 120rem;
-  margin: 0 2.5rem;
-  background-color:aliceblue;
+    max-width: 120rem;
+    margin: 0 2.5rem;
+    background-color: aliceblue;
 }
 
 .discover_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .discover_info {
-  width: 25.625rem;
-  padding: 3.125rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50% 80% 68% 10%;
-  margin-bottom: 5rem;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    width: 25.625rem;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 80% 68% 10%;
+    margin-bottom: 3rem;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+        rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+        rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
+
 .discover_title {
-  font-size: 2.625rem;
+    font-size: 2.625rem;
 }
+
 .discover_description,
 .discover_title,
 .discover_btn {
-  text-align: center;
-  margin-top: 1.25rem;
+    text-align: center;
+    margin-top: 1.25rem;
 }
 
 .discover_btn {
-  padding: .9375rem 3.125rem;
-  border-radius: 1.25rem;
-  font-size: 1.0625rem;
-  background-color: #070707;
-  color: #fff;
-  cursor: pointer;
+    padding: 0.9375rem 3.125rem;
+    border-radius: 1.25rem;
+    font-size: 1.0625rem;
+    background-color: #070707;
+    color: #fff;
+    cursor: pointer;
 }
 
+.discover_img_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
 
+.discover_img_box img {
+    width: 90%;
+    height: 260px;
+}
 
 @media only screen and (max-width: 768px) {
+    .discover {
+        width: 100%;
+        margin: 0 10px;
+    }
 
+    .discover_img_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discover_img_box img {
+        width: 90%;
+        height: auto;
+    }
 }
